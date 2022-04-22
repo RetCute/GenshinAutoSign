@@ -1,4 +1,4 @@
-#原神米游社自动签到 GenshinAutoBBSSsignin
+<br>#原神米游社自动签到 GenshinAutoBBSSsignin</br>
 使用:
 这里以一台Centos的服务器为例
 首先安装python3.x

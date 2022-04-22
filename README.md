@@ -5,5 +5,5 @@
 <br>安装支持库</br>
 <br>nohup python3 main.py</br>
 <br>在config.json里添加你的cookies</br>
-<br>获取cookies的教程:https://www.bilibili.com/video/BV11Y4y1q7Aw</br>
-<br>不妨留下Star和三连?</br>
+<br>获取cookies的教程:https://www.bilibili.com/video/BV11Y4y1q7Aw
+<br>不妨留下Star和三连?

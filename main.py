@@ -62,7 +62,7 @@ class AutoSign:
 
     @staticmethod
     def get_ds():
-        n = 'h8w582wxwgqvahcdkpvdhbh2w9casgfl'
+        n = '9nQiU3AV0rJSIBWgdynfoGMGKaklfbM7'
         i = str(int(time.time()))
         r = ''.join(random.sample(string.ascii_lowercase + string.digits, 6))
         c = md5.md5('salt=' + n + '&t=' + i + '&r=' + r)

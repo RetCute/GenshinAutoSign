@@ -86,14 +86,18 @@ class AutoSign:
                 cnt = awards[total_sign_day]['cnt']
                 log.WriteLog(f"[INFO]UID:{info['uid']}今日的奖励是{cnt}{awardname}")
                 headers = {
-                    'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) miHoYoBBS/2.3.0',
-                    'Referer': 'https://webstatic.mihoyo.com/bbs/event/signin-ys/index.html?bbs_auth_required=true&act_id=e202009291139501&utm_source=bbs&utm_medium=mys&utm_campaign=icon',
-                    'Accept-Encoding': 'gzip, deflate, br',
+                    'DS': self.get_ds(),
+                    'Origin': 'https://webstatic.mihoyo.com',
+                    'x-rpc-app_version': "2.34.1",
+                    'User-Agent': 'Mozilla/5.0 (Linux; Android 9; Unspecified Device) AppleWebKit/537.36 (KHTML, like Gecko) '
+                                  'Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36 miHoYoBBS/2.3.0',
+                    'x-rpc-client_type': "5",
+                    'Referer': '',
+                    'Accept-Encoding': 'gzip, deflate',
+                    'Accept-Language': 'zh-CN,en-US;q=0.8',
+                    'X-Requested-With': 'com.mihoyo.hyperion',
                     'x-rpc-device_id': str(uuid.uuid3(
                         uuid.NAMESPACE_URL, json.dumps(info["cookies"]))).replace('-', '').upper(),
-                    'x-rpc-client_type': '5',
-                    'x-rpc-app_version': "2.3.0",
-                    'DS': self.get_ds(),
                 }
                 data = {
                     'act_id': 'e202009291139501',
